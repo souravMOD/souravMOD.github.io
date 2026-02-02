@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowDown, Sparkles, Brain, Cpu } from 'lucide-react';
-import Image from 'next/image';  // Next.js optimized image component
+// For static export, we use regular img tag instead of Next.js Image component
 
 export default function Hero() {
   return (
@@ -75,13 +75,12 @@ export default function Hero() {
           <div className="relative inline-block">
             {/* Gradient ring around image */}
             <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-full blur-sm opacity-75" />
-            <Image
+            <img
               src="/profile.jpg"
               alt="Sourav Modak"
               width={150}
               height={150}
               className="relative rounded-full border-2 border-background object-cover"
-              priority  // Load this image first (above the fold)
             />
           </div>
         </motion.div>

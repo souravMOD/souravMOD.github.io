@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/personal_web',
+  basePath: '',
   images: {
     domains: ['images.unsplash.com'],
     unoptimized: true,
